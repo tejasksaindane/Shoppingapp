@@ -28,5 +28,6 @@
 }
 .subtotal > button:hover{
     background-color:#00D2D3;
-    color:"white"
+    color:white;
+    font-weight:500;
 }

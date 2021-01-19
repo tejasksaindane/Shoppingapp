@@ -3,14 +3,17 @@ import "./Home.css"
 import Product from "./Product"
 import video1  from "./Aakruti/samsung.mp4"
 
+
+
 const Home = () => {
     return (
+     
         <div className="home">
-
+          
             <div className="home__container">
-                <img className= "home__image" src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/vivo/2021/Jan/GW/Carnival/D19959167_WL_VIVO_carnival_Jan_Tall_Hero_1500x600._CB411131795_.jpg" alt=""/>
-            </div>
-
+              <img className = "home__image"src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/vivo/2021/Jan/GW/Carnival/D19959167_WL_VIVO_carnival_Jan_Tall_Hero_1500x600._CB411131795_.jpg" alt=""/>
+    </div>
+      
             <div className="home__row">
                 {/* product 2*/}
                 <Product className="home__expand" title="Google Pixel 5 5G (Sorta Sage, 8GB RAM, 128GB Storage)" 

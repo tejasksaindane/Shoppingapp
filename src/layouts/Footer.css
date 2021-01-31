@@ -1,7 +1,15 @@
 
   .container{
-    background-color:#57606f;
+    background-color:#636e72;
      opacity:transparent;
+     backdrop-filter:blur ;
+     
+     column-count: 5;
+     column-rule:1px solid white;
+     column-fill:balance;
+     column-gap:45px;
+     margin-bottom:20px;
+     padding:10px;
     /* height:100%; */
     /* width:100vh; */
     /* height:100vh; */
@@ -42,6 +50,9 @@
     color:white;
     list-style:none;
     padding:5px;
+  }
+  .logo_img{
+    padding-right:25px;
   }
   
   

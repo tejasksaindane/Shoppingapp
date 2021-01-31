@@ -4,17 +4,17 @@ import Product from "./Product"
 import video1  from "./Aakruti/samsung.mp4"
 
 
-
 const Home = () => {
     return (
      
-        <div className="home">
-          
-            <div className="home__container">
-              <img className = "home__image"src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/vivo/2021/Jan/GW/Carnival/D19959167_WL_VIVO_carnival_Jan_Tall_Hero_1500x600._CB411131795_.jpg" alt=""/>
-    </div>
+       
+    <div className="home">
       
-            <div className="home__row">
+            {/*<div className="home__container">
+              <img className = "home__image"src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/JanART/GW2021/T1a/T1b/Jan-ART_DesktopHero_unrec_1x_shop-now._CB661923095_.jpg" alt=""/>
+    </div>*/}
+    <h1 className = "home__header">Mobiles And Accesories</h1>
+                <div className="home__row">
                 {/* product 2*/}
                 <Product className="home__expand" title="Google Pixel 5 5G (Sorta Sage, 8GB RAM, 128GB Storage)" 
                 price={ 69750}
@@ -28,7 +28,7 @@ const Home = () => {
                 />
                 <Product className="home__expand" title="Samsung Galaxy Note 20 Ultra 5G (Mystic Black, 12GB RAM, 256GB Storage) with No Cost EMI" 
                 price={104999}
-               image="https://images-na.ssl-images-amazon.com/images/I/816LQ5R1iOL._SL1500_.jpg"
+                image="https://images-na.ssl-images-amazon.com/images/I/816LQ5R1iOL._SL1500_.jpg"
                 rating={5}
                 />
                 <Product className="home__expand" title="New Apple iPhone 12 Mini (128GB) - Blue" 
@@ -37,7 +37,7 @@ const Home = () => {
                 rating={5}
                 />
             </div>
-             
+            <h1 className = "home__header">Diamonds</h1>
             <div className="home__row">
                 <Product title="CEYLONMINE Silver and American Diamond Couple Ring for Unisex-adult (White)"
                 price={5698}
@@ -60,7 +60,10 @@ const Home = () => {
                 rating={4}
                 />
             </div>
-
+            <center>
+            <img className = "home__adv" src="https://images-eu.ssl-images-amazon.com/images/G/31/img16/vineet/Jan-art_GW-Editorial_1150x323._CB662145289_.jpg" alt=""/>
+            </center>
+            <h1 className = "home__header">Watches</h1>
             <div className="home__row">
                 <Product title="Fossil Grant Chronograph Analog Black Dial Men's Watch - FS4832"
                 price={14000}
@@ -89,8 +92,8 @@ const Home = () => {
                 <video className ="home__video" src={video1} autoPlay muted ></video>    
             </div>
           </div>
-
         </div>
+    
     )
 }
 

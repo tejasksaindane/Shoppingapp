@@ -7,9 +7,10 @@ import {useStateValue} from "./StateProvider"
 import {auth} from "./firebase"
 
 const Header = () => {
+
 const[{basket,user},dispatch]= useStateValue();
 
-const handleAuthentication = () =>{
+const handleAuthentication = () => {
     if (user) {
         auth.signOut();
     }
@@ -17,7 +18,7 @@ const handleAuthentication = () =>{
     return (
         <div className="header">
             <Link to="/">
-             <img className="header__logo" src="https://img1a.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt=""/>
+             <img className="header__logo" src="https://2.bp.blogspot.com/-H2y-Oyc5s_Q/WIMajw6yfqI/AAAAAAAAGa4/FxdvbCmskbQZVhgwFxKK3X7QAr7h91ieQCLcB/w1200-h630-p-k-no-nu/3d-Text-Stylish-Indian-Flag-Hd-Wallpaper-png-image.png"  />
             </Link>
             <div className="header__search">
                 <input

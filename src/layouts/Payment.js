@@ -50,8 +50,10 @@ function Payment() {
             }
         }).then(({ paymentIntent }) => {
             // paymentIntent = payment confirmation
+   var userCollection = db.collection('users');
+   console.log("the bhosada is >>>>>>>",userCollection);
 
-            db
+           /* db
               .collection('users')
               .doc(user?.uid)
               .collection('orders')
@@ -60,7 +62,7 @@ function Payment() {
                   basket: basket,
                   amount: paymentIntent.amount,
                   created: paymentIntent.created
-              })
+              })*/
 
             setSucceeded(true);
             setError(null)
@@ -112,7 +114,7 @@ function Payment() {
                     <div className='payment__items'>
                         {basket.map(item => (
                             <CheckoutProduct
-                                id={item.id}
+                                id={item.uid}
                                 title={item.title}
                                 image={item.image}
                                 price={item.price}

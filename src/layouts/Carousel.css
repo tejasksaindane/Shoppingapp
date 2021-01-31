@@ -1,0 +1,14 @@
+#car img{
+    width: 100% !important;
+    height: 500px;
+    width:100%;
+    z-index:-1;
+    mask-image:linear-gradient(to bottom,rgba(0,0,0,1),rgba(0,0,0,0));
+    margin-bottom:-210px;
+}
+@media screen and ( max-width : 480px){
+    #car img{
+        width: 100% !important;
+        height: 150px;
+    } 
+}

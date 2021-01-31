@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
 .login{
     background-color:white;
     height: 100vh;
@@ -21,10 +22,16 @@
     border-radius:5px;
     border: 1px solid lightgray;
     padding:20px;
+    outline:5px double red;
+    outline-offset:5px;
+    
 }
 .login__container > h1{
     font-weight:500;
     margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+    font-family: 'Yusei Magic', sans-serif;
 }
 .login__container > form > h5 {
     margin-bottom:5px;
@@ -34,8 +41,9 @@
     margin-bottom:10px;
     background-color: white;
     width:98%;
+    border-radius:15px;
 }
-.login__container >p{
+.login__container > p {
     margin-top:15px;
     font-size:12px;
 }

@@ -6,22 +6,23 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import "./Carousel.css";
 
 const items = [
   {
-    src: 'https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/SingleTitle/Tandav/Launch/1500x600_Hero-Tall_NP._CB411883672_.jpg',
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    src: 'https://images-eu.ssl-images-amazon.com/images/G/31/img17/Home/LA/Diwali2019/Rishab/Auto_Biss/BISS_GW_Hero/BISS_1500x600-RECb_Jan._CB411491151_.jpg',
+    altText: '',
+    caption: ''
   },
   {
     src: 'https://images-eu.ssl-images-amazon.com/images/G/31/img20/kitchen/Herotators/XCM_Manual_1231691_1222782_IN_in_x999_store_in_en_3179209_1500x600_en_IN._CB410654551_.jpg',
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    altText: '',
+    caption: ''
   },
   {
     src: 'https://images-eu.ssl-images-amazon.com/images/G/31/img20/Wireless/Nokia/5.3/Dec/V240911677_IN_WLME_Nokia_5.3_LP_Tall_hero_1500x600._CB412602534_.jpg',
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    altText: '',
+    caption: ''
   }
 ];
 
@@ -60,16 +61,19 @@ const Example = (props) => {
   });
 
   return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-    >
-      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
-      {slides}
-      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
-      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
-    </Carousel>
+    <>
+      <div id='car'>
+        <Carousel
+          activeIndex={activeIndex}
+          next={next}
+          previous={previous}>
+        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+        {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
+      </Carousel>
+      </div>
+    </>
   );
 }
 

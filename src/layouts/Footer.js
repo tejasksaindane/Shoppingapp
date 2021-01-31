@@ -7,7 +7,7 @@ function Footer() {
       <div class="container">
         <div class="footer__container">
           <div class="logo">
-            <img src="https://2.bp.blogspot.com/-H2y-Oyc5s_Q/WIMajw6yfqI/AAAAAAAAGa4/FxdvbCmskbQZVhgwFxKK3X7QAr7h91ieQCLcB/w1200-h630-p-k-no-nu/3d-Text-Stylish-Indian-Flag-Hd-Wallpaper-png-image.png" alt="" width="200px" height="100px"/>
+            <img class="logo_img" src="https://2.bp.blogspot.com/-H2y-Oyc5s_Q/WIMajw6yfqI/AAAAAAAAGa4/FxdvbCmskbQZVhgwFxKK3X7QAr7h91ieQCLcB/w1200-h630-p-k-no-nu/3d-Text-Stylish-Indian-Flag-Hd-Wallpaper-png-image.png" alt="" width="200px" height="100px"/>
             <h2> IndiaMart </h2>
             <ul>
               <li>India</li>

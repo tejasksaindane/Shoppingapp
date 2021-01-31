@@ -12,6 +12,7 @@ import Payment from "./layouts/Payment"
 import {loadStripe} from "@stripe/stripe-js"
 import {Elements} from "@stripe/react-stripe-js"
 import Orders from "./Orders"
+import Example from './layouts/Carousel'
 
 const promise = loadStripe("pk_test_51IABh1LStO9zoQRRT81ooFD1qUkbclD1x0NjmFLZEOHz5Hr1KIPIbxzrOYyynubo6pLaZm1Gv3zPfUsUlmXe8Vmi00CzGkiiAZ");
 
@@ -47,11 +48,12 @@ const[{},dispatch] = useStateValue();
    
     
       <Switch>
-      <Route path = "/orders"><Header/><Orders/></Route> 
-      <Route path = "/login"><Login/></Route> 
-      <Route path = "/CheckOut"><Header/><CheckOut/></Route> 
-      <Route path = "/payment"><Header/><Elements stripe={promise}><Payment/></Elements></Route> 
-      <Route path="/"><Header/><Home/><Footer/></Route>
+      <Route exact path = "/orders"><Header/><Orders/></Route> 
+      <Route exact path = "/login"><Login/></Route> 
+      <Route exact path = "/CheckOut"><Header/><CheckOut/></Route> 
+      <Route exact path = '/carousel'><Example/></Route>
+      <Route exact path = "/payment"><Header/><Elements stripe={promise}><Payment/></Elements></Route> 
+      <Route path="/"><Header/><Example/><Home/><Footer/></Route>
       </Switch>
       
      </div>
